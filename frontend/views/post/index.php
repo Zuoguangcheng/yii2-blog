@@ -32,6 +32,18 @@ $this->title = 'Posts';
         <ul class="list-group">
           <li class="list-group-item">
             <span class="glyphicon glyphicon-search"></span>查找文章
+            <?php
+            $data = Yii::$app->cache->get('postCount');
+
+            if ($data === false) {
+              $data = \common\models\Post::find()->count();
+              sleep(2);
+              echo $data;
+              Yii::$app->cache->set('postCount', $data);
+            } else {
+              echo $data;
+            }
+            ?>
           </li>
           <li class="list-group-item">
             <form class="form-inline" action="index.php?r=post/index" id="w0" method="get">
