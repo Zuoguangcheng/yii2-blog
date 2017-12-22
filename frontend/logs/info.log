@@ -1,0 +1,30 @@
+2017-12-20 08:24:19 [127.0.0.1][-][-][info][info] []
+    in /Users/mrz/workSpace/Phpstorm/advanced/common/models/PostSearch.php:62
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/controllers/PostController.php:39
+2017-12-20 08:24:19 [127.0.0.1][-][-][info][info] 1111
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/views/post/index.php:9
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/controllers/PostController.php:44
+2017-12-20 08:24:20 [127.0.0.1][-][-][info][info] []
+    in /Users/mrz/workSpace/Phpstorm/advanced/common/models/PostSearch.php:62
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/controllers/PostController.php:39
+2017-12-20 08:24:20 [127.0.0.1][-][-][info][info] 1111
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/views/post/index.php:9
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/controllers/PostController.php:44
+2017-12-20 08:24:21 [127.0.0.1][-][-][info][info] []
+    in /Users/mrz/workSpace/Phpstorm/advanced/common/models/PostSearch.php:62
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/controllers/PostController.php:39
+2017-12-20 08:24:21 [127.0.0.1][-][-][info][info] 1111
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/views/post/index.php:9
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/controllers/PostController.php:44
+2017-12-20 08:24:21 [127.0.0.1][-][-][info][info] []
+    in /Users/mrz/workSpace/Phpstorm/advanced/common/models/PostSearch.php:62
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/controllers/PostController.php:39
+2017-12-20 08:24:21 [127.0.0.1][-][-][info][info] 1111
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/views/post/index.php:9
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/controllers/PostController.php:44
+2017-12-20 08:24:22 [127.0.0.1][-][-][info][info] []
+    in /Users/mrz/workSpace/Phpstorm/advanced/common/models/PostSearch.php:62
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/controllers/PostController.php:39
+2017-12-20 08:24:22 [127.0.0.1][-][-][info][info] 1111
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/views/post/index.php:9
+    in /Users/mrz/workSpace/Phpstorm/advanced/frontend/controllers/PostController.php:44
