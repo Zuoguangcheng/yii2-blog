@@ -32,6 +32,21 @@ class PostController extends Controller
           'delete' => ['POST'],
         ],
       ],
+      // 页面缓存
+      'pageCache' => [
+        'class' => 'yii\filters\PageCache',
+        'only' => ['index'], // 指定缓存的页面
+        'duration' => 600,
+        'variations' => [
+          // 参数变化重新生成缓存
+          Yii::$app->request->get('page'),
+          Yii::$app->request->get('PostSearch'),
+        ],
+        'dependency' => [
+          'class' => 'yii\caching\DbDependency',
+          'sql' => 'select count(id) from post',
+        ],
+      ],
     ];
   }
 
@@ -47,7 +62,6 @@ class PostController extends Controller
 
     $searchModel = new PostSearch();
     $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
 
     return $this->render('index', [
       'searchModel' => $searchModel,

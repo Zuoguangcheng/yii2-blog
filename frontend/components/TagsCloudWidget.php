@@ -29,6 +29,7 @@ class TagsCloudWidget extends Widget
         . $fontStyle[$weight] . '">' . $tag . '</span></h' . $weight . '></a>';
     }
 
+    sleep(2);
     return $tagString;
   }
 }

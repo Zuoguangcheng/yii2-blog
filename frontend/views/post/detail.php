@@ -21,8 +21,6 @@ $this->title = 'Posts';
         <li><a href="<?= Yii::$app->urlManager->createUrl(['post/index']); ?>">文章列表</a></li>
         <li class="active"><?= $model->title ?></a></li>
       </ol>
-
-
       <div class="post">
         <div class="title">
           <h2><a href="<?= $model->url; ?>"><?= Html::encode($model->title); ?></a></h2>
@@ -34,13 +32,10 @@ $this->title = 'Posts';
           </div>
         </div>
 
-
         <br>
-
         <div class="content">
           <?= HTMLPurifier::process($model->content) ?>
         </div>
-
         <br>
 
         <div class="nav">
@@ -90,6 +85,8 @@ $this->title = 'Posts';
 
       </div>
     </div>
+
+
 
     <div class="col-md-3">
       <div class="searchbox">

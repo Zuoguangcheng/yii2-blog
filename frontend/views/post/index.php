@@ -3,6 +3,9 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 
+use yii\caching\DbDependency;
+use yii\caching\FileDependency;
+
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\PostSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -33,16 +36,20 @@ $this->title = 'Posts';
           <li class="list-group-item">
             <span class="glyphicon glyphicon-search"></span>查找文章
             <?php
-            $data = Yii::$app->cache->get('postCount');
+            /* $data = Yii::$app->cache->get('postCount');
 
-            if ($data === false) {
-              $data = \common\models\Post::find()->count();
-              sleep(2);
-              echo $data;
-              Yii::$app->cache->set('postCount', $data);
-            } else {
-              echo $data;
-            }
+             $dependency = new DbDependency(['sql' => 'select count(id) from post']);
+
+             Yii::info($data, 'info');
+
+             if ($data === false) {
+               $data = \common\models\Post::find()->count();
+               sleep(1);
+               echo $data;
+               Yii::$app->cache->set('postCount', $data, 500, $dependency);
+             } else {
+               echo $data;
+             }*/
             ?>
           </li>
           <li class="list-group-item">
@@ -62,7 +69,14 @@ $this->title = 'Posts';
             <span class="glyphicon glyphicon-tag"></span>标签云
           </li>
           <li class="list-group-item">
-            <?= \frontend\components\TagsCloudWidget::widget(['tags' => $tags]) ?>
+            <?php
+            /*$dependency = new DbDependency(['sql' => 'select count(id) from post']);
+
+            if ($this->beginCache('cache', ['duration' => 600, 'dependency' => $dependency])) {
+              echo \frontend\components\TagsCloudWidget::widget(['tags' => $tags]);
+              $this->endCache();
+            }*/
+            ?>
           </li>
         </ul>
       </div>
